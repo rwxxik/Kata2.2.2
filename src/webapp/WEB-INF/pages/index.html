@@ -10,6 +10,12 @@
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
     </th:block>
+
+    <a href="/cars">Go to cars (No param)</a>
+    <br>
+    <a href="/cars?count=3">Go to cars (count=3)</a>
+    <br>
+    <a href="/cars?count=7">Go to cars (count=7)</a>
 </div>
 </body>
 </html>
