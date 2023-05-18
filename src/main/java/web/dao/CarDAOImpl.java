@@ -28,7 +28,7 @@ public class CarDAOImpl implements CarDAO {
     public List<Car> getListCar(int count) {
         List<Car> listCar = new ArrayList<>();
 
-        if (count >= dataBase.size()) {
+        if (count >= dataBase.size() || count < 0) {
             return getListCar();
         }
 
